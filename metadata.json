@@ -1,0 +1,6 @@
+{
+  "name": "CineAI",
+  "description": "Cinema Ticket Management System with Dynamic Seating, Seat Selection, Admin price control, and Gemini AI-powered assistant",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

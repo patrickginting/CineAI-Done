@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      // Prevent secure iframe breakout wrappers or browser extension loggers from throwing
+      // "Uncaught TypeError: Cannot set property fetch of #<Window> which has only a getter"
+      // by defining an explicit getter and setter on window, globalThis, and Window.prototype.
+      (function() {
+        try {
+          let currentFetch = window.fetch;
+          
+          function defineOn(obj) {
+            try {
+              Object.defineProperty(obj, "fetch", {
+                get() {
+                  return currentFetch;
+                },
+                set(val) {
+                  currentFetch = val;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            } catch (e) {
+              // Fail silently if a specific target object is non-configurable
+            }
+          }
+
+          defineOn(window);
+          if (typeof globalThis !== "undefined") {
+            defineOn(globalThis);
+          }
+          if (typeof Window !== "undefined" && Window.prototype) {
+            defineOn(Window.prototype);
+          }
+        } catch (e) {
+          console.warn("Could not setup window.fetch getter/setter wrapper:", e);
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineAI — Cinema Ticket Management System & AI Assistant</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

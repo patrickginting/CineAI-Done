@@ -1,0 +1,210 @@
+{
+  "movies": [
+    {
+      "id": "m1",
+      "title": "Interstellar",
+      "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "genre": "Sci-Fi / Adventure",
+      "release_year": 2014,
+      "duration_min": 169,
+      "rating": 8.7,
+      "poster_url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=600&auto=format&fit=crop",
+      "imdb_score": 8.7
+    },
+    {
+      "id": "m2",
+      "title": "Dune: Part Two",
+      "synopsis": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+      "genre": "Sci-Fi / Drama",
+      "release_year": 2024,
+      "duration_min": 166,
+      "rating": 8.6,
+      "poster_url": "https://images.unsplash.com/photo-1547483238-f400e65ccd56?q=80&w=600&auto=format&fit=crop",
+      "imdb_score": 8.6
+    },
+    {
+      "id": "m3",
+      "title": "Spider-Man: Into the Spider-Verse",
+      "synopsis": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions.",
+      "genre": "Animation / Action",
+      "release_year": 2018,
+      "duration_min": 117,
+      "rating": 8.4,
+      "poster_url": "https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=600&auto=format&fit=crop",
+      "imdb_score": 8.4
+    },
+    {
+      "id": "m4",
+      "title": "Inside Out 2",
+      "synopsis": "Follow Riley in her teenage years as she encounters new emotions, including Anxiety, Envy, and Embarrassment.",
+      "genre": "Family / Comedy",
+      "release_year": 2024,
+      "duration_min": 96,
+      "rating": 7.8,
+      "poster_url": "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?q=80&w=600&auto=format&fit=crop",
+      "imdb_score": 7.8
+    },
+    {
+      "id": "m5",
+      "title": "Parasite",
+      "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "genre": "Thriller / Drama",
+      "release_year": 2019,
+      "duration_min": 132,
+      "rating": 8.5,
+      "poster_url": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=600&auto=format&fit=crop",
+      "imdb_score": 8.5
+    }
+  ],
+  "studios": [
+    {
+      "id": "s1",
+      "name": "Studio 1",
+      "capacity": 100
+    },
+    {
+      "id": "s2",
+      "name": "Studio 2",
+      "capacity": 100
+    },
+    {
+      "id": "s3",
+      "name": "Studio 3",
+      "capacity": 100
+    }
+  ],
+  "showtimes": [
+    {
+      "id": "st_m1_1",
+      "movie_id": "m1",
+      "studio_id": "s1",
+      "start_time": "2026-06-19T10:30:00Z",
+      "end_time": "2026-06-19T13:19Z",
+      "base_price": 50000
+    },
+    {
+      "id": "st_m1_2",
+      "movie_id": "m1",
+      "studio_id": "s2",
+      "start_time": "2026-06-19T16:30:00Z",
+      "end_time": "2026-06-19T19:19Z",
+      "base_price": 60000
+    },
+    {
+      "id": "st_m2_1",
+      "movie_id": "m2",
+      "studio_id": "s2",
+      "start_time": "2026-06-19T13:45:00Z",
+      "end_time": "2026-06-19T16:31Z",
+      "base_price": 50000
+    },
+    {
+      "id": "st_m2_2",
+      "movie_id": "m2",
+      "studio_id": "s3",
+      "start_time": "2026-06-19T19:15:00Z",
+      "end_time": "2026-06-19T22:01Z",
+      "base_price": 60000
+    },
+    {
+      "id": "st_m3_1",
+      "movie_id": "m3",
+      "studio_id": "s3",
+      "start_time": "2026-06-19T16:30:00Z",
+      "end_time": "2026-06-19T18:27Z",
+      "base_price": 50000
+    },
+    {
+      "id": "st_m3_2",
+      "movie_id": "m3",
+      "studio_id": "s1",
+      "start_time": "2026-06-19T22:00:00Z",
+      "end_time": "2026-06-19T23:57Z",
+      "base_price": 60000
+    },
+    {
+      "id": "st_m4_1",
+      "movie_id": "m4",
+      "studio_id": "s1",
+      "start_time": "2026-06-19T19:15:00Z",
+      "end_time": "2026-06-19T20:51Z",
+      "base_price": 50000
+    },
+    {
+      "id": "st_m4_2",
+      "movie_id": "m4",
+      "studio_id": "s2",
+      "start_time": "2026-06-19T10:30:00Z",
+      "end_time": "2026-06-19T12:06Z",
+      "base_price": 60000
+    },
+    {
+      "id": "st_m5_1",
+      "movie_id": "m5",
+      "studio_id": "s2",
+      "start_time": "2026-06-19T22:00:00Z",
+      "end_time": "2026-06-19T00:12Z",
+      "base_price": 50000
+    },
+    {
+      "id": "st_m5_2",
+      "movie_id": "m5",
+      "studio_id": "s3",
+      "start_time": "2026-06-19T13:45:00Z",
+      "end_time": "2026-06-19T15:57Z",
+      "base_price": 60000
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b_1782473477924_684",
+      "showtime_id": "st_m1_1",
+      "customer_name": "Nia",
+      "seat_ids": [
+        "F_4",
+        "F_5",
+        "F_3"
+      ],
+      "final_price": 157500,
+      "booked_at": "2026-06-26T11:31:17.924Z"
+    }
+  ],
+  "pricing_modifiers": [
+    {
+      "id": "p1",
+      "label": "Evening/Night Peak (17:00-22:00)",
+      "modifier_type": "peak_hour",
+      "multiplier": 1.2,
+      "is_active": true
+    },
+    {
+      "id": "p2",
+      "label": "After-Work Rush (16:00-19:00, Weekdays)",
+      "modifier_type": "after_work",
+      "multiplier": 1.1,
+      "is_active": true
+    },
+    {
+      "id": "p3",
+      "label": "Weekend Modifier (Sat & Sun)",
+      "modifier_type": "weekend",
+      "multiplier": 1.25,
+      "is_active": true
+    },
+    {
+      "id": "p4",
+      "label": "Hot Seat Premium (Center Zone)",
+      "modifier_type": "hot_seat",
+      "multiplier": 1.15,
+      "is_active": true
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin_1",
+      "email": "admin@cineai.com",
+      "password_hash": "admin",
+      "full_name": "CineAI Administrator"
+    }
+  ]
+}
